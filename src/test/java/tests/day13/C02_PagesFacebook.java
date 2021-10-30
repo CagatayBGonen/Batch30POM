@@ -3,6 +3,7 @@ package tests.day13;
 
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.interactions.Actions;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.FacebookPage;
 import utilities.TestBase;
@@ -25,6 +26,6 @@ public class C02_PagesFacebook extends TestBase {
                 .sendKeys("12345")
                 .sendKeys(Keys.ENTER)
                 .perform();
-
+        Assert.assertTrue(facebookPage.loginFailedTextBox.isDisplayed(),"giris yapılamadi texti gozukmuyor");
     }
 }

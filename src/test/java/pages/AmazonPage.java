@@ -4,6 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.Select;
 
 public class AmazonPage {
     WebDriver driver;
@@ -20,4 +21,8 @@ public class AmazonPage {
     public WebElement seachBox;
     @FindBy(xpath = "//div[@class='a-section a-spacing-small a-spacing-top-small']")
     public WebElement resultText;
+    @FindBy(id = "searchDropdownBox")
+    public WebElement dropdownMenu;
+
+
 }
