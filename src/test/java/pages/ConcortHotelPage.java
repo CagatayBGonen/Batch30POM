@@ -24,4 +24,5 @@ public class ConcortHotelPage {
     public WebElement submitBttn;
     @FindBy(id = "divMessageResult")
     public WebElement resultBox;
+
 }

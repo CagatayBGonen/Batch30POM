@@ -22,7 +22,7 @@ public class QAConcortPage {
     public WebElement passwordBox;
     @FindBy(id = "btnSubmit")
     public WebElement submitBttn;
-    @FindBy(id = "divMessageResult")
+    @FindBy(xpath = "//*[text()='HotelRoom was inserted successfully']")
     public WebElement resultBox;
     @FindBy(id = "menuHotels")
     public WebElement menuHotel;
@@ -42,6 +42,24 @@ public class QAConcortPage {
     public WebElement okBttn;
     @FindBy(xpath = "//button[@type='submit']")
     public WebElement saveBttn;
+    @FindBy(partialLinkText = "Hotel Rooms")
+    public WebElement hotelRoomsList;
+    @FindBy(xpath = "//span[text()='Add Hotelroom ']")
+    public WebElement addHotelRoomBttn;
+    @FindBy(id = "IDHotel")
+    public WebElement idHotelDropdownMenu;
+    @FindBy(id = "Price")
+    public WebElement priceDropBox;
+    @FindBy(xpath = "(//li[@class='credit ui-draggable ui-draggable-handle'])[1]")
+    public WebElement dragPrice;
+    @FindBy(id = "IDGroupRoomType")
+    public WebElement idGroupRoomTypeDropdownMenu;
+    @FindBy(xpath = "//span[@class='caption-subject font-green-sharp bold uppercase']")
+    public WebElement listOfHotelRoomsText;
+    @FindBy(id = "IsAvailable")
+    public WebElement approvedBox;
+    @FindBy(linkText = "Hotelrooms")
+    public WebElement HotelRoomsLink;
 
 
     public void qaConcortHotelAdminLogin() {
