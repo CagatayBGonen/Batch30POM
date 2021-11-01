@@ -37,7 +37,7 @@ public class C01_E2ETest02 {
         qaConcortPage.addHotelRoomBttn.click();
         Select select = new Select(qaConcortPage.idHotelDropdownMenu);
         select.selectByVisibleText(ConfigurationReader.getProperty("CHQAIDHotelselect"));
-        Thread.sleep(2000);
+        Thread.sleep(1000);
         Actions actions = new Actions(Driver.getDriver());
         actions.sendKeys(qaConcortPage.codeBox, faker.address().zipCode())
                 .sendKeys(Keys.TAB)
