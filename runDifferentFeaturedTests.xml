@@ -1,0 +1,19 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="run tests">
+    <test name="run different tests" verbose="1">
+        <!-- verbose, sonnuc yazisinin miktarini belirler -->
+        <!-- class, package, method gibi farkli ozelliklerde testler calistirilacaksa
+                hiyerarsiye dikkat ederek tum testleri tek tek yazabiliriz -->
+        <packages>
+            <package name="tests.smokeTest"></package>
+        </packages>
+        <classes>
+            <class name="tests.day13.C03_Pages02"></class>
+            <class name="tests.day13.C01_Pages">
+                <methods>
+                    <include name="testPOM"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

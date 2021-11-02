@@ -5,6 +5,8 @@
             <class name="tests.day13.C01_Pages">
                 <methods>
                     <include name="test"></include>
+                    <!-- calistiracagimizz method sayisi az oldugunda "include" kullanilir-->
+                    <!-- calistirmayacagimiz method sayisi az oldugunda "exclude" kullaniriz -->
                 </methods>
             </class>
         </classes>
