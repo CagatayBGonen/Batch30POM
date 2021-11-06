@@ -15,7 +15,7 @@ public class C03_Pages02 extends TestBase {
     @Test
     public void javaSearchTest() {
         driver.get("https://www.amazon.com/");
-        AmazonPage amazonPage = new AmazonPage(driver);
+        AmazonPage amazonPage = new AmazonPage();
         Select select = new Select(amazonPage.dropdownMenu);
         select.selectByVisibleText("Books");
         amazonPage.seachBox.sendKeys("Java", Keys.ENTER);

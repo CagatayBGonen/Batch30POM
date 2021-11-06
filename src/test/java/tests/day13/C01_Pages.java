@@ -25,7 +25,7 @@ public class C01_Pages extends TestBase {
     @Test
     public void testPOM(){
         driver.get("https://www.amazon.com/");
-        AmazonPage amazonPage = new AmazonPage(driver);
+        AmazonPage amazonPage = new AmazonPage();
         amazonPage.seachBox.sendKeys("Nutella"+ Keys.ENTER);
         System.out.println(amazonPage.resultText.getText());
         Assert.assertTrue(amazonPage.resultText.getText().contains("Nutella"),"Nutella icermiyor");
