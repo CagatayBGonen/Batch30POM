@@ -9,10 +9,12 @@ import utilities.TestBase;
 
 public class C04_AmazonConfig extends TestBase {
     @Test
-    public void test(){
+    public void test() throws InterruptedException {
         driver.get(ConfigurationReader.getProperty("AmazonUrl"));
         AmazonPage amazonPage = new AmazonPage();
+        Thread.sleep(1000);
         amazonPage.seachBox.sendKeys("Nutella"+ Keys.ENTER);
+        Thread.sleep(1000);
         System.out.println(amazonPage.resultText.getText());
         Assert.assertTrue(amazonPage.resultText.getText().contains("Nutella"),"Aranan kelime arama sonuclari yazsinida yok");
 

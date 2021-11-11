@@ -30,7 +30,9 @@ public class C02_E2ETest {
         Faker faker = new Faker();
         QAConcortPage  qaConcortPage = new QAConcortPage();
         qaConcortPage.qaConcortHotelAdminLogin();
+        Thread.sleep(1000);
         qaConcortPage.menuHotel.click();
+        Thread.sleep(1000);
         qaConcortPage.hotelList.click();
         qaConcortPage.addHotelBttn.click();
         Actions actions = new Actions(Driver.getDriver());
